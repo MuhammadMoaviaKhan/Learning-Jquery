@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+</head>
+
+<body onresize="resizeEvent()">
+    <div>
+        <button class="open" onclick="openWindow()">Open Window</button>
+        <button class="open" onclick="resizeWindow()">Resize Window</button>
+        <!-- <button class="open" onclick="moveWindow()">Move Window</button> -->
+        <!-- <button class="open" onclick="closeWindow()">close Window</button> -->
+    </div>
+    <!-- <div>
+        <br>
+        <div id="black"></div>
+        <button onclick="stopAnimation()">Stop Animation</button>
+    </div> -->
+    <!-- <div class="sfjd">
+        <div>
+            <label for="">Name</label><input type="text" name="" id="fname" value="  " onfocus="focusFunction(this)"
+                onblur="blurFunction(this)" oninput="inputFunction(this)"onchange="changeFunction()"><br><br>
+            <label for="">Email</label><input type="text" name="" id="" value="  " onfocus="focusFunction(this)"
+                onblur="blurFunction(this)" oninput="inputFunction(this)" onchange="changeFunction()"><br><br>
+            <label for="">Password</label><input type="password" name="" id="" value="  " onfocus="focusFunction(this)"
+                onblur="blurFunction(this)" oninput="inputFunction(this)" onchange="changeFunction()"><br><br>
+            <label for="">Country</label>
+            <select name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)" 
+                onchange="changeFunction()">
+                <option value="PAKISTAN">PAKISTAN</option>
+                <option value="TURKEY">TURKEY</option>
+                <option value="CHAINA">CHAINA</option>
+                <option value="RUSSIA">RUSSIA</option>
+                <option value="QATAR">QATAR</option>
+            </select>
+        </div>
+        <br>
+        <div id="tes"></div>
+    </div> -->
+    <!-- <div class="sfjd">
+        <div>
+            <label for="">Name</label><input type="text" name="" id="fname" onfocus="focusFunction(this)"
+                onblur="blurFunction(this)" onchange="changeFunction(this)"><br><br>
+            <label for="">Email</label><input type="email" name="" id="" onfocus="focusFunction(this)"
+                onblur="blurFunction(this)" oninput="inputFunction()" onchange="changeFunction(this)"><br><br>
+            <label for="">Password</label><input type="password" name="" id="" onfocus="focusFunction(this)"
+                onblur="blurFunction(this)" oninput="inputFunction(this)" onchange="changeFunction(this)"><br><br>
+            <label for="">Country</label>
+            <select name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction()" onchange="changeFunction(this)">
+                <option value="PAKISTAN">PAKISTAN</option>
+                <option value="TURKEY">TURKEY</option>
+                <option value="CHAINA">CHAINA</option>
+                <option value="RUSSIA">RUSSIA</option>
+                <option value="QATAR">QATAR</option>
+            </select>
+        </div>
+        <br>
+        <div id="tes"></div>
+    </div> -->
+    <!-- <br>
+    <br>
+    <ul class="ulli" id="list">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>potatto</li>
+        <li>Grapes</li>
+    </ul>
+    <br><br>
+    <ul class="ulli" id="list1">
+        <li>Carrot</li>
+        <li>Tomato</li>
+        <li>Orange</li>
+        <li>Corn</li>
+    </ul> -->
+    <!-- <h1>Apend Mathod </h1>
+    <div class="java" id="test">
+        <h3>HELLO WORLD</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magnam itaque voluptate illum eaque facilis quos cum,
+            veniam eligendi voluptatum sint aliquam debitis dolores placeat distinctio illo vel possimus est?
+        </p>
+    </div> -->
+    <!-- <div id="test">
+        <h1>Contains Mathod </h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque minima,
+            officiis ea consectetur eaque! Corrupti nihil error architecto animi rerum doloribus laborum ratione qui
+            quasi quae dignissimos aperiam nostrum vel delectus labore,
+            incidunt repellendus dolores adipisci perferendis ad quis itaque ipsum. Deserunt assumenda, magnam labore
+            aperiam earum consequatur error,
+            ullam nisi ea placeat voluptatibus perspiciatis ex tempora, incidunt deleniti.
+        </p>
+        <br>
+        <p id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque minima,
+            officiis ea consectetur eaque! Corrupti nihil error architecto animi rerum doloribus laborum ratione qui
+            quasi quae dignissimos aperiam nostrum vel delectus labore,
+            incidunt repellendus dolores adipisci perferendis ad quis itaque ipsum. Deserunt assumenda, magnam labore
+            aperiam earum consequatur error,
+            ullam nisi ea placeat voluptatibus perspiciatis ex tempora, incidunt deleniti.
+        </p>
+    </div> -->
+    <!-- <div>
+        <div class="outer" id="outer"> 
+            <h2>Outer</h2>
+            <div id="inner">
+                <h2>Inner</h2>
+                <div>A</div>
+                <div>B</div>
+                <div id="child-C">C</div>
+                <div>D</div>
+                <div>E</div>
+            </div>
+        </div>      
+    </div>     -->
+    <!-- <div class="cont">
+        <div class="bgimg">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <div class="container">
+                    <img src="images/img2.png.png" class="nvimg" alt="">
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsenavbar">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link text-warning" target="_blank"> HOME
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link text-warning">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link text-warning" target="_blank">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link text-warning" target="_blank">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link text-warning" target="_blank">CONTECT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container text-center headerset" style="border: ponka;" onclick="abc()">
+                <h1 class="text-primary"> HELLO WORLD! </h1>
+                <h2 class="text-success"> WELLCOME TO MY PORTFOLIO </h2>
+            </div>
+        </div>
+        <section class="my-5">
+            <div class="py-5">
+                <h2 class="text-center text-info pg" id="services"> <u> OUR SERVICES</u></h2>
+                <hr>
+            </div>
+            <div class="container bg-primary">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card m-5 p-2 text-center pdl">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRrRSzReQAQyDACimcqmJpIOqyLULJs4rjigZK9wrKbeVM340dj&usqp=CAU"
+                                class="card-img-top" alt="..." width="20" height="160">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Designing</h5>
+                                <p class="card-text text-muted"> I'm desin only web page of Saylani Welfare Trust
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <a href="portfolio.html" class="btn btn-primary" target="_blank">Watch it </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card m-5 p-2 text-center pdl">
+                            <img src="https://ginva.com/wp-content/uploads/2016/11/ginva_2016-11-09_06-34-31.png"
+                                class="card-img-top" alt="..." width="20" height="160">
+                            <div class="card-body">
+                                <h5 class="card-title">Logo Designing</h5>
+                                <p class="card-text text-muted"> i am not design a logo for any company . But i can
+                                    it
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <a href="portfolio.html" class="btn btn-primary" target="_blank"> Watch it </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card m-5 p-2 text-center pdl pdl1">
+                            <img src="https://www.dqindia.com/wp-content/uploads/2015/12/data.jpg"
+                                class="card-img-top img3" alt="..." width="20" height="160">
+                            <div class="card-body">
+                                <h5 class="card-title">Data Analysis</h5>
+                                <p class="card-text text-muted"> I can help you in your futuer decisions on your
+                                    business
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <a href="portfolio.html" class="btn btn-primary" target="_blank">Watch It </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <-- <div  id="h1">
+                <br><br>
+                <p class="intro">
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, reprehenderit, voluptatum commodi tenetur dicta omnis vero quod officiis, exercitationem sit praesentium illum maxime autem libero reiciendis quo voluptas aspernatur assumenda!
+                   Cumque amet doloremque ducimus sed reiciendis quia perferendis, ratione dolor hic ea aut voluptas labore veritatis est cupiditate consequuntur aspernatur id odio excepturi necessitatibus consectetur error quam. Aliquid, accusantium delectus!
+                   Ex accusantium optio inventore eos necessitatibus, laudantium ipsam repellendus nihil earum consectetur autem neque quibusdam asperiores esse harum nesciunt, commodi aliquid corporis ullam consequuntur tempore itaque sunt aspernatur? Mollitia, temporibus?
+                   Quibusdam, molestiae. Ad magni sapiente iusto vel consequuntur itaque optio quis incidunt dolorum excepturi ratione praesentium repellendus odio molestiae, iste et? Laudantium ad fuga dolorum blanditiis eos rem ab unde.
+                   Facere quas quisquam numquam veritatis enim nihil laborum repellendus ipsum id voluptatibus animi quos perferendis quis neque dolor veniam voluptas fugit, modi quo alias consectetur? Consectetur reprehenderit sunt veniam eaque.
+                </p>
+                <ul class="intro">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Odit voluptatem quam recusandae, labore ad, temporibus quaerat aliquid sapiente</li>
+                    <li>ipsum excepturi magni voluptates sequi expedita alias saepe mollitia a cumque eligendi.</li>
+                </ul>
+            </div>  -->
+    <!-- </section>
+        <div class="container">
+            <div class="row">
+                <footer class="ftr" id="ftor">
+                    <ul class="icon">
+                        <h1 class="text-white us">CONTACT US</h1>
+                        <li class="text-secondary tbh"> <i class="fab fa-facebook-f text-primary "></i> FACEBOOK </li>
+                        <li class="text-secondary tbh"> <i class="fab fa-instagram text-danger "></i> INSTAGRAM </li>
+                        <li class="text-secondary tbh"> <i class="fab fa-twitter text-secondary  "></i> TWITTER </li>
+                        <li class="text-secondary tbh"> <i class="fab fa-whatsapp text-success "></i> WHATSAPP </li>
+                    </ul>
+                    <p class="txt text-center">
+                        <u class="text-primary"> moaviakhan2001@gmail.com </u>
+                        <br>
+                        <span><u class="text-primary"> @Copyright-2020 </u> </span>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div> -->
+    <script src="app.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
